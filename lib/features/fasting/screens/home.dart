@@ -1,8 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:mi_eon/core/constants/assets.dart';
 import 'package:mi_eon/core/constants/colors.dart';
+import 'package:mi_eon/core/utils.dart';
 import 'package:mi_eon/features/fasting/widgets/AppBarWidget.dart';
 import 'package:mi_eon/features/fasting/widgets/InfoCard.dart';
+import 'package:mi_eon/features/fasting/widgets/TimerWidget.dart';
 
 
 class HomeScreen extends StatelessWidget{
@@ -34,7 +36,9 @@ class HomeBody extends StatelessWidget{
               icon: Icon(AppIcons.clock, size: 44,),
               title: 'Yay, 5 days left for Eid !! 😆',
               description: "congratulations you're not mokel this month",
-            )
+            ),
+            gap(21, vertical: true),
+            TimerWidget()
           ],
         ),
       ),
